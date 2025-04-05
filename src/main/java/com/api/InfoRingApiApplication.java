@@ -46,6 +46,7 @@ public class InfoRingApiApplication implements CommandLineRunner {
             List<Role> savedRoles = this.roleRepository.saveAll(roles);
         }
         catch (Exception e){
+            e.printStackTrace();
 
         }
     }
